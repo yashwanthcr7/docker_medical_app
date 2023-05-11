@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Application - Add Patient</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+        h1 {
+            color: red;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        label {
+             font-size: 20px;
+            font-weight: bold;
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Patient</h1>
+    <form action="/add_patient" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name"><br><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name"><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        <label for="diagnosis">Diagnosis:</label>
+        <input type="text" id="diagnosis" name="diagnosis"><br><br>
+        <label for="covid">Covid:</label>
+        <input type="text" id="covid" name="covid"><br><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea><br><br>
+        <input type="submit" value="Add Patient">
+    </form>
+</body>
+</html>
